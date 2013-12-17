@@ -11,6 +11,8 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import <CommonCrypto/CommonHMAC.h>
 
+#import "MF_Base64Additions.h"
+
 @implementation JWTAlgorithmHS512
 
 - (NSString *)name;
@@ -20,8 +22,9 @@
 
 - (NSData *)encodePayload:(NSString *)theString withSecret:(NSString *)theSecret;
 {
+    NSData *decodedSecret = [MF_Base64Codec dataFromBase64String:theSecret];
     const char *cString = [theString cStringUsingEncoding:NSUTF8StringEncoding];
-    const char *cSecret = [theSecret cStringUsingEncoding:NSUTF8StringEncoding];
+    const char *cSecret = [decodedSecret bytes];
     
     unsigned char cHMAC[CC_SHA512_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA512, cSecret, strlen(cSecret), cString, strlen(cString), cHMAC);
