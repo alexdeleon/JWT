@@ -15,3 +15,7 @@ DerivedData
 .idea/
 *.hmap
 Pods
+
+Podfile.lock
+
+JWT.xcworkspace/xcshareddata/JWT.xccheckout
