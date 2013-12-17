@@ -8,7 +8,7 @@ A [JSON Web Token][] implementation in Objective-C.
 
 Add the following to your [Cocoapods][] Podfile:
 
-    pod 'JWT', git: 'https://github.com/yourkarma/JWT.git', tag: '1.0.0'
+    pod 'JWT', git: 'https://github.com/alexdeleon/JWT.git', tag: '1.1.0'
 
 [Cocoapods]: http://cocoapods.org
 
