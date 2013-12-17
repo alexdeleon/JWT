@@ -23,7 +23,7 @@
 		A1951DF21758CBB300AF73D9 /* JWTClaimsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1951DF11758CBB200AF73D9 /* JWTClaimsSet.m */; };
 		A1951DF71758CD8400AF73D9 /* JWTClaimsSetSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1951DF61758CD8300AF73D9 /* JWTClaimsSetSerializer.m */; };
 		A1951DF91758CD9000AF73D9 /* JWTClaimsSerializerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A1951DF81758CD9000AF73D9 /* JWTClaimsSerializerSpec.m */; };
-		FA2FA6A1186106EA00ABCC39 /* JWTAlgorithmHS256.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FA6A0186106EA00ABCC39 /* JWTAlgorithmHS256.m */; };
+		FA2FA6A418610C9000ABCC39 /* JWTAlgorithmHS256.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FA6A318610C9000ABCC39 /* JWTAlgorithmHS256.m */; };
 		FA8175D4186101590011E410 /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8175D3186101590011E410 /* MF_Base64Additions.m */; };
 /* End PBXBuildFile section */
 
@@ -75,8 +75,8 @@
 		A1951DF81758CD9000AF73D9 /* JWTClaimsSerializerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTClaimsSerializerSpec.m; sourceTree = "<group>"; };
 		CCA9CE015337487F82BE305D /* Pods-JWTTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTTests.xcconfig"; path = "Pods/Pods-JWTTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F2B4C324FC0D40F0B91F6C2E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		FA2FA69F186106EA00ABCC39 /* JWTAlgorithmHS256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHS256.h; sourceTree = SOURCE_ROOT; };
-		FA2FA6A0186106EA00ABCC39 /* JWTAlgorithmHS256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHS256.m; sourceTree = SOURCE_ROOT; };
+		FA2FA6A218610C9000ABCC39 /* JWTAlgorithmHS256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHS256.h; sourceTree = "<group>"; };
+		FA2FA6A318610C9000ABCC39 /* JWTAlgorithmHS256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHS256.m; sourceTree = "<group>"; };
 		FA8175D2186101590011E410 /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
 		FA8175D3186101590011E410 /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,8 +142,8 @@
 		A1951DBB1758990700AF73D9 /* JWT */ = {
 			isa = PBXGroup;
 			children = (
-				FA2FA69F186106EA00ABCC39 /* JWTAlgorithmHS256.h */,
-				FA2FA6A0186106EA00ABCC39 /* JWTAlgorithmHS256.m */,
+				FA2FA6A218610C9000ABCC39 /* JWTAlgorithmHS256.h */,
+				FA2FA6A318610C9000ABCC39 /* JWTAlgorithmHS256.m */,
 				FA8175D2186101590011E410 /* MF_Base64Additions.h */,
 				FA8175D3186101590011E410 /* MF_Base64Additions.m */,
 				A1951DBC1758990700AF73D9 /* Supporting Files */,
@@ -351,7 +351,7 @@
 				FA8175D4186101590011E410 /* MF_Base64Additions.m in Sources */,
 				A1951DEF1758B3C400AF73D9 /* JWTAlgorithmHS512.m in Sources */,
 				A1951DF21758CBB300AF73D9 /* JWTClaimsSet.m in Sources */,
-				FA2FA6A1186106EA00ABCC39 /* JWTAlgorithmHS256.m in Sources */,
+				FA2FA6A418610C9000ABCC39 /* JWTAlgorithmHS256.m in Sources */,
 				A1951DF71758CD8400AF73D9 /* JWTClaimsSetSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
