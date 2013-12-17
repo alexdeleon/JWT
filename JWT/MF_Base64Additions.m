@@ -9,7 +9,7 @@
 //  Public Domain
 //
 
-#import "MF_Base64Additions_ RFC4648.h"
+#import "MF_Base64Additions.h"
 
 @implementation MF_Base64Codec
 +(NSData *)dataFromBase64String:(NSString *)encoding
