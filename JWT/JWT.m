@@ -11,13 +11,14 @@
 #import "MF_Base64Additions.h"
 
 #import "JWTAlgorithmHS512.h"
+#import "JWTAlgorithmHS256.h"
 #import "JWTClaimsSetSerializer.h"
 
 @implementation JWT
 
 + (NSString *)encodeClaimsSet:(JWTClaimsSet *)theClaimsSet withSecret:(NSString *)theSecret;
 {
-    return [self encodeClaimsSet:theClaimsSet withSecret:theSecret algorithm:[[JWTAlgorithmHS512 alloc] init]];
+    return [self encodeClaimsSet:theClaimsSet withSecret:theSecret algorithm:[[JWTAlgorithmHS256 alloc] init]];
 }
 
 + (NSString *)encodeClaimsSet:(JWTClaimsSet *)theClaimsSet withSecret:(NSString *)theSecret algorithm:(id<JWTAlgorithm>)theAlgorithm;
@@ -28,7 +29,7 @@
 
 + (NSString *)encodePayload:(NSDictionary *)thePayload withSecret:(NSString *)theSecret;
 {
-    return [self encodePayload:thePayload withSecret:theSecret algorithm:[[JWTAlgorithmHS512 alloc] init]];
+    return [self encodePayload:thePayload withSecret:theSecret algorithm:[[JWTAlgorithmHS256 alloc] init]];
 }
 
 + (NSString *)encodePayload:(NSDictionary *)thePayload withSecret:(NSString *)theSecret algorithm:(id<JWTAlgorithm>)theAlgorithm;
