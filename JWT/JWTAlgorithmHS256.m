@@ -21,9 +21,8 @@
 
 - (NSData *)encodePayload:(NSString *)theString withSecret:(NSString *)theSecret;
 {
-    NSData *decodedSecret = [MF_Base64Codec dataFromBase64String:theSecret];
     const char *cString = [theString cStringUsingEncoding:NSUTF8StringEncoding];
-    const char *cSecret = [decodedSecret bytes];
+    const char *cSecret = [theSecret cStringUsingEncoding:NSUTF8StringEncoding];
     
     unsigned char cHMAC[CC_SHA256_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA256, cSecret, strlen(cSecret), cString, strlen(cString), cHMAC);
